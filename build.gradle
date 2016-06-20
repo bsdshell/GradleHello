@@ -1,0 +1,25 @@
+// File: build.gradle
+apply plugin: 'java'
+
+dependencies {
+    compile files('/Users/cat/myfile/github/JavaLib/Aron.jar')
+}
+
+
+task(runHello, dependsOn: 'classes', type: JavaExec) {
+    main = 'com.tiny3.HelloWorld'
+    classpath = sourceSets.main.runtimeClasspath
+    //args 'mrhaki'
+    systemProperty 'HelloWorld.message', 'Hello '
+}
+
+defaultTasks 'runHello'
+
+
+// javaexec() method also available for direct invocation
+// javaexec {
+//    main = 'com.mrhaki.java.Simple'
+//    classpath = sourceSets.main.runtimeClasspath
+//    args 'mrhaki'
+//    systemProperty 'simple.message', 'Hello '
+// }
