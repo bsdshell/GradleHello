@@ -9,7 +9,7 @@ dependencies {
 task(runHello, dependsOn: 'classes', type: JavaExec) {
     main = 'com.tiny3.HelloWorld'
     classpath = sourceSets.main.runtimeClasspath
-    //args 'mrhaki'
+    args 'myarg1'
     systemProperty 'HelloWorld.message', 'Hello '
 }
 

@@ -10,13 +10,20 @@ import classfile.*;
 
 public class HelloWorld{
     public static void main(String[] args) {
-        //System.out.println(System.getProperty("simple.message") + args[0] + " from Simple.");
+        for(String s: args){
+            System.out.println("s:=" + s);
+        }
+
         System.out.println("HelloWorld");
-        List<String> list = new ArrayList<String>();
-        Aron.printList(list);
-        for(int i=0; i<10; i++){
+        for(int i=0; i<3; i++){
             System.out.println("HelloWorld");
         } 
+
+        List<String> list = new ArrayList<String>();
+        list.add("ant");
+        list.add("maven");
+        list.add("gradle");
+        Aron.printList(list);
     }
 }
 
