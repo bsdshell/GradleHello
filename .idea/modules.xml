@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/gradletutorial.iml" filepath="$PROJECT_DIR$/gradletutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GradleHello.iml" filepath="$PROJECT_DIR$/GradleHello.iml" />
     </modules>
   </component>
 </project>

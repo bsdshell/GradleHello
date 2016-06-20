@@ -1,12 +1,9 @@
 package com.tiny3;
 
+import classfile.Aron;
+
 import java.util.ArrayList;
 import java.util.List;
-import java.util.StringTokenizer;
-import java.util.Vector; 
-import classfile.*;
-
-// File: src/main/java/hello/com/tiny3/Simple.java
 
 public class HelloWorld{
     public static void main(String[] args) {
